@@ -22,6 +22,7 @@ authors:
   - family-names: "Leon-Dominguez"
     given-names: "Umberto"
     affiliation: "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey"
+    orcid: "https://orcid.org/0000-0001-5170-2553"
 repository-code: "https://github.com/AILabFr8tech/wehaveadeal"
 url: "https://github.com/AILabFr8tech/wehaveadeal"
 license: Apache-2.0
@@ -49,5 +50,6 @@ preferred-citation:
     - family-names: "Leon-Dominguez"
       given-names: "Umberto"
       affiliation: "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey"
+      orcid: "https://orcid.org/0000-0001-5170-2553"
   year: 2026
   notes: "Manuscript"
