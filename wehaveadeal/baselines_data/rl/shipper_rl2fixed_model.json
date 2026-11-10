@@ -1,0 +1,26 @@
+{
+  "role": "shipper",
+  "algorithm": "PPO",
+  "env": "LeagueNegotiationEnv",
+  "timesteps": 10000,
+  "n_envs": 8,
+  "training_seconds": 21.894673347473145,
+  "min_rivals": 1,
+  "max_rivals": 2,
+  "reward_impasse": -0.5,
+  "reward_closed_lost": -0.15,
+  "trained_eval": {
+    "n_episodes": 500,
+    "mean_reward": 0.3448259971005675,
+    "won_rate": 0.538,
+    "closed_lost_rate": 0.456,
+    "impasse_rate": 0.006
+  },
+  "random_baseline_eval": {
+    "n_episodes": 500,
+    "mean_reward": 0.23119862941394625,
+    "won_rate": 0.686,
+    "closed_lost_rate": 0.314,
+    "impasse_rate": 0.0
+  }
+}

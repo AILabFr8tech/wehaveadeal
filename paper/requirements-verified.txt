@@ -1,0 +1,15 @@
+# Exact versions under which the public package re-simulated the paper's tournament
+# (deal outcomes identical, payoffs within 0.0003 USD) and regenerated
+# pct_outcomes.csv byte-for-byte. Python 3.11.9, CPU only.
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r paper/requirements-verified.txt && pip install -e ".[paper]"
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.5.2
+joblib==1.6.0
+torch==2.14.1
+stable-baselines3==2.9.0
+gymnasium==1.3.0
+pydantic==2.13.5
+pandas==3.0.6
+requests==2.34.2

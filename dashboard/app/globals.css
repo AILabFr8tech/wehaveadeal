@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom range-input skin so <input type="range"> matches the dashboard's
+   flat, monospace control aesthetic instead of the OS-default blue pill. */
+.range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120px;
+  height: 2px;
+  background: theme("colors.line.light");
+  border-radius: 0;
+  outline-offset: 4px;
+}
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: theme("colors.ink.primary.light");
+  cursor: pointer;
+}
+.range-input::-moz-range-track {
+  height: 2px;
+  background: theme("colors.line.light");
+  border-radius: 0;
+}
+.range-input::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 2px;
+  background: theme("colors.ink.primary.light");
+  cursor: pointer;
+}
+.range-input:disabled {
+  cursor: not-allowed;
+}
+.range-input:disabled::-webkit-slider-thumb,
+.range-input:disabled::-moz-range-thumb {
+  background: theme("colors.ink.muted");
+  cursor: not-allowed;
+}
+@media (prefers-color-scheme: dark) {
+  .range-input {
+    background: theme("colors.line.dark");
+  }
+  .range-input::-webkit-slider-thumb {
+    background: theme("colors.ink.primary.dark");
+  }
+  .range-input::-moz-range-track {
+    background: theme("colors.line.dark");
+  }
+  .range-input::-moz-range-thumb {
+    background: theme("colors.ink.primary.dark");
+  }
+}
+
+::selection {
+  background: #2a78d633;
+}
+
+:focus-visible {
+  outline: 2px solid #2a78d6;
+  outline-offset: 2px;
+}

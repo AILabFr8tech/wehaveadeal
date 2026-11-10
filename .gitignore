@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv*/
+
+# Your local runs (reports and round logs) -- share reports via the leaderboard instead
+results/
+data/*.json
+
+# Node / Next.js
+node_modules/
+dashboard/.next/
+dashboard/next-env.d.ts
+dashboard/.env.local
+dashboard/tsconfig.tsbuildinfo
+
+# Secrets (API keys for your own LLM agents)
+.env
+*.key
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw demo recordings (see docs/media/record_demo.py)
+docs/media/_raw/
+
+# Crash dumps written by Git-for-Windows tools
+*.stackdump

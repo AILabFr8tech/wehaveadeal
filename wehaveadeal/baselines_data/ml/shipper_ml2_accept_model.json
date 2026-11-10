@@ -1,0 +1,33 @@
+{
+  "role": "shipper",
+  "teacher_kind": "opt2",
+  "feature_names": [
+    "turn_frac",
+    "my_turn_frac",
+    "opp_turn_frac",
+    "opp_last_pos",
+    "opp_last_seen",
+    "my_last_pos",
+    "my_last_seen",
+    "opp_trend_slope",
+    "opp_trend_intercept_pos",
+    "opp_trend_seen",
+    "n_opp_offers",
+    "portfolio_promise"
+  ],
+  "n_rows": 109991,
+  "n_train_rows": 87341,
+  "n_val_rows": 22650,
+  "accepted_frac": 0.5574274258802993,
+  "train_accuracy": 0.8776863099804215,
+  "val_accuracy": 0.8738631346578366,
+  "train_auc": 0.9592048111810194,
+  "val_auc": 0.9575733156762648,
+  "naive_val_accuracy": 0.5492273730684327,
+  "model_class": "HistGradientBoostingClassifier",
+  "hyperparams": {
+    "max_depth": 4,
+    "max_iter": 200,
+    "learning_rate": 0.08
+  }
+}

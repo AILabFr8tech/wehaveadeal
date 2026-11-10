@@ -1,0 +1,24 @@
+{
+  "role": "carrier",
+  "algorithm": "PPO",
+  "timesteps": 300000,
+  "n_envs": 8,
+  "training_seconds": 474.61271142959595,
+  "trained_eval": {
+    "n_episodes": 1000,
+    "mean_reward": 0.909,
+    "close_rate": 0.909
+  },
+  "random_baseline_eval": {
+    "n_episodes": 1000,
+    "mean_reward": 0.44140217920225266,
+    "close_rate": 1.0
+  },
+  "opponent_kinds": [
+    "r",
+    "rv",
+    "is",
+    "opt",
+    "opt2"
+  ]
+}

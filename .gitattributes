@@ -1,0 +1,15 @@
+# Normalize text files to LF in the repository.
+* text=auto
+
+# Shell scripts run inside Linux containers: never convert to CRLF, even on Windows checkouts.
+*.sh text eol=lf
+
+# Trained weights and media are binary: never touch their bytes.
+*.joblib binary
+*.pkl binary
+*.zip binary
+*.pt binary
+*.onnx binary
+*.png binary
+*.gif binary
+*.mp4 binary

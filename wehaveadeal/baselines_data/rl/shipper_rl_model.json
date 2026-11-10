@@ -1,0 +1,24 @@
+{
+  "role": "shipper",
+  "algorithm": "PPO",
+  "timesteps": 300000,
+  "n_envs": 8,
+  "training_seconds": 456.39826345443726,
+  "trained_eval": {
+    "n_episodes": 1000,
+    "mean_reward": 0.942411933161197,
+    "close_rate": 0.994
+  },
+  "random_baseline_eval": {
+    "n_episodes": 1000,
+    "mean_reward": 0.4661173810761349,
+    "close_rate": 0.998
+  },
+  "opponent_kinds": [
+    "r",
+    "rv",
+    "is",
+    "opt",
+    "opt2"
+  ]
+}

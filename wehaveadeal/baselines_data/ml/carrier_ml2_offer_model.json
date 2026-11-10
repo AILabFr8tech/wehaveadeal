@@ -1,0 +1,30 @@
+{
+  "role": "carrier",
+  "teacher_kind": "opt2",
+  "feature_names": [
+    "turn_frac",
+    "my_turn_frac",
+    "opp_turn_frac",
+    "opp_last_pos",
+    "opp_last_seen",
+    "my_last_pos",
+    "my_last_seen",
+    "opp_trend_slope",
+    "opp_trend_intercept_pos",
+    "opp_trend_seen",
+    "n_opp_offers",
+    "portfolio_promise"
+  ],
+  "n_rows": 172553,
+  "n_train_rows": 136982,
+  "n_val_rows": 35571,
+  "train_mae": 0.024262642277668504,
+  "val_mae": 0.02421312452176858,
+  "naive_val_mae": 0.06816176624216308,
+  "model_class": "HistGradientBoostingRegressor",
+  "hyperparams": {
+    "max_depth": 4,
+    "max_iter": 200,
+    "learning_rate": 0.08
+  }
+}

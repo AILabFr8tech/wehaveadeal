@@ -1,0 +1,29 @@
+# Everything runs on YOUR machine:  docker compose up  ->  http://localhost:3000
+#   api        the arena + reference architectures + your agents (./agents, live-mounted)
+#   dashboard  the web UI (live negotiations, round history)
+services:
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"   # localhost only: this service executes the files in ./agents
+    volumes:
+      - ./agents:/app/agents
+      - ./data:/app/data
+    environment:
+      WHAD_MOVE_TIMEOUT_S: "60"
+      # Uncomment to give an LLM agent your own endpoint / key (see examples/llm_carrier.py):
+      # LLM_BASE_URL: http://host.docker.internal:11434/v1
+      # LLM_MODEL: llama3.1:8b
+      # LLM_API_KEY: ${LLM_API_KEY}
+
+  dashboard:
+    build:
+      context: ./dashboard
+      args:
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:8000
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./data:/app/data:ro     # round logs from `wehaveadeal benchmark ... --save-rounds data`
+    depends_on:
+      - api

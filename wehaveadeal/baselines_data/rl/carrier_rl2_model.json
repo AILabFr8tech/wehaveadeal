@@ -1,0 +1,26 @@
+{
+  "role": "carrier",
+  "algorithm": "PPO",
+  "env": "LeagueNegotiationEnv",
+  "timesteps": 300000,
+  "n_envs": 8,
+  "training_seconds": 658.5202975273132,
+  "min_rivals": 1,
+  "max_rivals": 2,
+  "reward_impasse": -0.5,
+  "reward_closed_lost": -0.15,
+  "trained_eval": {
+    "n_episodes": 500,
+    "mean_reward": 0.358757770553848,
+    "won_rate": 0.71,
+    "closed_lost_rate": 0.29,
+    "impasse_rate": 0.0
+  },
+  "random_baseline_eval": {
+    "n_episodes": 500,
+    "mean_reward": 0.20054366750350008,
+    "won_rate": 0.68,
+    "closed_lost_rate": 0.32,
+    "impasse_rate": 0.0
+  }
+}
