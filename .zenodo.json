@@ -1,0 +1,41 @@
+{
+  "title": "We Have a Deal: a research toolkit for bilateral negotiation",
+  "upload_type": "software",
+  "description": "<p>An open arena for automated freight-rate negotiation, with the nine reference negotiation architectures (rule-based, search, optimization, imitation-learned and reinforcement-learned) and their trained weights, a toolkit for benchmarking your own agents locally, and everything the accompanying paper reports: raw tournament and LLM-study data, figures, analysis notebooks and experiment scripts.</p><p>Accompanying paper: <em>Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based, Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity</em>.</p>",
+  "creators": [
+    {
+      "name": "de Avila-Armenta, Eduardo",
+      "affiliation": "Tecnológico de Monterrey, School of Engineering and Sciences; AI Lab, Freight Technologies Inc.",
+      "orcid": "0000-0003-3461-7722"
+    },
+    {
+      "name": "Aquino-Ibarra, Raúl Alejandro",
+      "affiliation": "AI Lab, Freight Technologies Inc."
+    },
+    {
+      "name": "Nicolás-Díaz, Jorge Octavio",
+      "affiliation": "AI Lab, Freight Technologies Inc."
+    },
+    {
+      "name": "Leon-Dominguez, Umberto",
+      "affiliation": "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey"
+    }
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": [
+    "automated negotiation",
+    "multi-agent systems",
+    "reinforcement learning",
+    "large language models",
+    "freight logistics",
+    "stable matching"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AILabFr8tech/wehaveadeal",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

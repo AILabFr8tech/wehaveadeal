@@ -3,7 +3,7 @@
 Retrained against the corrected `wehaveadeal.rl.league_env.LeagueNegotiationEnv`,
 so it feeds the model the real, unmodified `state` rather than neutralizing
 `my_portfolio` at inference. Not registered in `wehaveadeal.simulate`'s
-`SHIPPER_KINDS` -- paper-ablation-only, loaded directly by the ablation
+`SHIPPER_KINDS` -- a supplementary ablation variant (supplementary, not reported in the paper), loaded directly by the ablation
 script.
 """
 from __future__ import annotations

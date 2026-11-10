@@ -23,7 +23,6 @@ pytest tests/paper                 # integrity + reproduction checks (about 30 s
 | "% of sale" / margin-% columns | `data/validation/pct_outcomes.csv` | `scripts/_compute_pct_outcomes.py` |
 | Fig. `fig:ranking` | `figures/ranking_by_config.png` | `notebooks/validation_exhaustive.ipynb` |
 | Figs. `fig:winmatrix-*` (six win matrices) | `data/validation/pairwise_tests.csv` | `notebooks/validation_exhaustive.ipynb`, `scripts/_regen_english_figures.py` |
-| §"RL2 train/deployment gap" (RL2Fixed ablation) | `data/validation/ablation_rl2fixed_raw_results.csv` | `scripts/run_rl2fixed_ablation.py`, analysed in `notebooks/paper_results.ipynb` |
 | Tables `tab:llm-carrier`, `tab:llm-shipper` | `data/llm_validation/summary_stats.csv`, `tier_family_summary.csv`, `tier_summary.csv`, `pairwise_vs_rivals.csv` | `notebooks/analyze_llm_validation.ipynb` |
 | Table `tab:llm-compliance` (structured-output compliance, latency) | `data/llm_validation/compliance_by_role.csv`, from `*_calls.jsonl` | `notebooks/paper_results.ipynb` |
 | Figs. `fig:llm-vs-engines`, `fig:llm-tier-family` | `figures/llm_vs_engines.png`, `figures/llm_by_tier_family.png` | `notebooks/analyze_llm_validation.ipynb` |
@@ -32,6 +31,19 @@ pytest tests/paper                 # integrity + reproduction checks (about 30 s
 
 The pipeline, taxonomy and design figures are diagrams with no data behind
 them.
+
+## Supplementary material (not reported in the paper)
+
+**RL2Fixed** is RL2 retrained with real portfolio visibility during training,
+the corrected RL2 that the paper's discussion names as a next step rather than
+a reported result. We include its trained weights, the ablation script and its
+raw results for transparency, but the paper does not analyze them and no
+confidence intervals or significance tests have been computed on them.
+
+| Material | Data | Produced by |
+|---|---|---|
+| RL2 vs RL2Fixed ablation (same seeds and protocol) | `data/validation/ablation_rl2fixed_raw_results.csv` | `scripts/run_rl2fixed_ablation.py` |
+| RL2Fixed weights | `wehaveadeal/baselines_data/rl/*rl2fixed*` | `scripts/train_rl2fixed_resilient.sh` |
 
 ## The data
 
@@ -42,8 +54,8 @@ them.
   - `excluded`: the exclusion pair in scarce conditions
   - `day_id`, `role`, `kind`, `matched`
   - `outcome`: carrier margin in USD over the reference price, or shipper profit in USD
-- **`data/validation/ablation_rl2fixed_raw_results.csv`:** the same protocol
-  and seeds, with RL2 replaced by RL2Fixed.
+- **`data/validation/ablation_rl2fixed_raw_results.csv`** (supplementary, not in
+  the paper): the same protocol and seeds, with RL2 replaced by RL2Fixed.
 - **`data/llm_validation/<model>_<role>_outcomes.jsonl`:** one row per agent
   per day in the LLM study, for the LLM and its three same-side rivals.
 - **`data/llm_validation/<model>_<role>_calls.jsonl`:** every model call: the
@@ -62,7 +74,7 @@ Run all commands from the repo root.
 # set FORCE_RERUN = True in its second code cell, run all cells.
 jupyter lab paper/notebooks/validation_exhaustive.ipynb
 
-# The RL2Fixed ablation (same seeds and protocol)
+# Supplementary, not in the paper: the RL2Fixed ablation (same seeds and protocol)
 python paper/scripts/run_rl2fixed_ablation.py
 
 # Retrain RL2Fixed (PPO, 300k timesteps per role; writes to paper/models/)
@@ -77,8 +89,8 @@ python paper/scripts/_compute_pct_outcomes.py
 python paper/scripts/run_llm_validation.py --days 40 --host http://localhost:11434
 ```
 
-The bundled weights of the learned architectures (ML, ML2, RL, RL2, RL2Fixed)
-are the exact ones used in the paper. They are in
+The bundled weights of the learned architectures (ML, ML2, RL, RL2) are the
+exact ones used in the paper; the RL2Fixed weights are supplementary. They are in
 `wehaveadeal/baselines_data/`, and their training scripts are in
 `wehaveadeal/ml/` and `wehaveadeal/rl/`.
 

@@ -145,7 +145,7 @@ re-running it.
 ```
 wehaveadeal/            the package
   simulate.py, market.py, matching.py, scoring.py, models.py   the arena
-  agents/               the 9 reference architectures (both roles), RL2Fixed (paper ablation), Ollama LLM agents
+  agents/               the 9 reference architectures (both roles), RL2Fixed (supplementary), Ollama LLM agents
   baselines_data/       trained weights for ML, ML2, RL, RL2, RL2Fixed
   ml/, rl/              imitation-learning and RL pipelines (Gymnasium env included)
   toolkit/              loader, referee (GuardedAgent), benchmark protocol
@@ -162,14 +162,30 @@ Run the tests with `pip install -e ".[dev]" && pytest`.
 
 ## Citing
 
+Please cite the paper, and the software if you use the toolkit:
+
 ```bibtex
-@article{wehaveadeal2026,
-  title   = {Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based, Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity},
-  author  = {TODO},
-  journal = {TODO},
-  year    = {2026}
+@unpublished{deavila2026negotiate,
+  title  = {Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based, Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity},
+  author = {de Avila-Armenta, Eduardo and Aquino-Ibarra, Ra{\'u}l Alejandro and
+            Nicol{\'a}s-D{\'i}az, Jorge Octavio and Leon-Dominguez, Umberto},
+  note   = {Manuscript},
+  year   = {2026}
+}
+
+@software{wehaveadeal_toolkit,
+  title  = {We Have a Deal: a research toolkit for bilateral negotiation},
+  author = {de Avila-Armenta, Eduardo and Aquino-Ibarra, Ra{\'u}l Alejandro and
+            Nicol{\'a}s-D{\'i}az, Jorge Octavio and Leon-Dominguez, Umberto},
+  organization = {AI Lab, Freight Technologies Inc.},
+  url    = {https://github.com/AILabFr8tech/wehaveadeal},
+  license = {Apache-2.0},
+  year   = {2026}
 }
 ```
+
+GitHub's **Cite this repository** button (from [CITATION.cff](CITATION.cff))
+gives the same citation in other formats.
 
 ## License
 

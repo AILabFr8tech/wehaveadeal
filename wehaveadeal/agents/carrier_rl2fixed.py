@@ -6,7 +6,7 @@ across its own sibling tables during training instead of pinning
 inference-time neutralization removed: it feeds the model the real,
 unmodified `state`, since the model it loads was actually trained on that
 real distribution. Not registered in `wehaveadeal.simulate`'s `CARRIER_KINDS` --
-this is a paper-ablation-only variant, loaded directly by the ablation
+this is a supplementary ablation variant (supplementary, not reported in the paper), loaded directly by the ablation
 script that compares it against the original (buggy) `CarrierRL2`, not a
 tenth architecture in the main nine-architecture tournament.
 """

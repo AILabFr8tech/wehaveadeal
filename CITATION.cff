@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite the paper below and this software."
+type: software
+title: "We Have a Deal: a research toolkit for bilateral negotiation"
+abstract: >-
+  An open arena for automated freight-rate negotiation. Shippers and carriers negotiate
+  many bilateral tables in parallel under information asymmetry, and each negotiation
+  clears through stable matching. Users plug in their own agents and benchmark them
+  against the nine reference architectures of the accompanying paper; everything the
+  paper reports (data, figures, notebooks, scripts) is included.
+authors:
+  - family-names: "de Avila-Armenta"
+    given-names: "Eduardo"
+    affiliation: "Tecnológico de Monterrey, School of Engineering and Sciences; AI Lab, Freight Technologies Inc."
+    orcid: "https://orcid.org/0000-0003-3461-7722"
+  - family-names: "Aquino-Ibarra"
+    given-names: "Raúl Alejandro"
+    affiliation: "AI Lab, Freight Technologies Inc."
+  - family-names: "Nicolás-Díaz"
+    given-names: "Jorge Octavio"
+    affiliation: "AI Lab, Freight Technologies Inc."
+  - family-names: "Leon-Dominguez"
+    given-names: "Umberto"
+    affiliation: "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey"
+repository-code: "https://github.com/AILabFr8tech/wehaveadeal"
+url: "https://github.com/AILabFr8tech/wehaveadeal"
+license: Apache-2.0
+keywords:
+  - automated negotiation
+  - multi-agent systems
+  - reinforcement learning
+  - large language models
+  - freight logistics
+  - stable matching
+preferred-citation:
+  type: unpublished
+  title: "Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based, Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity"
+  authors:
+    - family-names: "de Avila-Armenta"
+      given-names: "Eduardo"
+      affiliation: "Tecnológico de Monterrey, School of Engineering and Sciences; AI Lab, Freight Technologies Inc."
+      orcid: "https://orcid.org/0000-0003-3461-7722"
+    - family-names: "Aquino-Ibarra"
+      given-names: "Raúl Alejandro"
+      affiliation: "AI Lab, Freight Technologies Inc."
+    - family-names: "Nicolás-Díaz"
+      given-names: "Jorge Octavio"
+      affiliation: "AI Lab, Freight Technologies Inc."
+    - family-names: "Leon-Dominguez"
+      given-names: "Umberto"
+      affiliation: "AI Lab, Freight Technologies Inc.; School of Psychology, University of Monterrey"
+  year: 2026
+  notes: "Manuscript"

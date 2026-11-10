@@ -33,7 +33,7 @@ __all__ = [
     "CarrierML2",
     "CarrierRL",
     "CarrierRL2",
-    "CarrierRL2Fixed",  # paper ablation (portfolio-visibility fix); not a benchmark baseline
+    "CarrierRL2Fixed",  # supplementary ablation (portfolio-visibility fix), not in the paper; not a benchmark baseline
     "CarrierLLM",
     "ShipperR",
     "ShipperRV",
@@ -44,6 +44,6 @@ __all__ = [
     "ShipperML2",
     "ShipperRL",
     "ShipperRL2",
-    "ShipperRL2Fixed",  # paper ablation; not a benchmark baseline
+    "ShipperRL2Fixed",  # supplementary ablation, not in the paper; not a benchmark baseline
     "ShipperLLM",
 ]
