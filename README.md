@@ -1,5 +1,8 @@
 # We Have a Deal: a research toolkit for bilateral negotiation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24122037.svg)](https://doi.org/10.5281/zenodo.24122037)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 **We Have a Deal** is an open arena for automated freight-rate negotiation.
 Shippers (buyers of transport) and carriers (sellers) negotiate many bilateral
 tables in parallel under information asymmetry. Each negotiation then clears
@@ -178,6 +181,7 @@ Please cite the paper, and the software if you use the toolkit:
   author = {de Avila-Armenta, Eduardo and Aquino-Ibarra, Ra{\'u}l Alejandro and
             Nicol{\'a}s-D{\'i}az, Jorge Octavio and Leon-Dominguez, Umberto},
   organization = {AI Lab, Freight Technologies Inc.},
+  doi    = {10.5281/zenodo.24122037},
   url    = {https://github.com/AILabFr8tech/wehaveadeal},
   license = {Apache-2.0},
   year   = {2026}

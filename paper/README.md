@@ -3,6 +3,9 @@
 > **Before AI Agents Negotiate for Us: A Competitive Tournament of Rule-Based,
 > Search, Optimization, Learned, and Language-Model Negotiators Under Scarcity**
 
+**Archived version used in the paper:** release v0.1.0,
+[doi:10.5281/zenodo.24122038](https://doi.org/10.5281/zenodo.24122038).
+
 Everything the paper reports is in this folder. You can **re-check** every
 number from the saved data in a few minutes. You can **regenerate** the
 tournament data from scratch, which takes tens of minutes on a laptop. The LLM
